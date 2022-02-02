@@ -71,7 +71,9 @@ class AdController extends Controller
     {
         $item = Ad::findOrfail($id);
         $item->update($request->all());
-        return response(['message'=> 'Category update successfully']);
+
+        $item->tags()->sync($request->tags);
+        return response(['message'=> 'Ad update successfully']);
     }
 
     /**
