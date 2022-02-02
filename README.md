@@ -13,7 +13,7 @@ Simple Ads management API that shows ads and related tags/categories.
 1- `service` pattern I added all business logic in separate classes each class contains only one responsibility.
 
 
-#Testing
+## Testing
 `vendor\bin\phpunit`
 
 
